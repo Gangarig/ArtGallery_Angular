@@ -1,0 +1,27 @@
+nav{
+  height: 6rem;
+  .navlinks{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .artist {
+      padding-top: 1rem;
+      padding-left: 1rem;
+  }
+  a{
+      width: auto;
+      font-family: Anaheim;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      text-align: left;
+      color: #000000;
+  }
+  a:hover {
+    color: darkgray;
+    scale: 1.1;
+  }
+  a:active{
+    scale: 0.9;
+  }
+}

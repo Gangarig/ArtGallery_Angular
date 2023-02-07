@@ -1,0 +1,17 @@
+/* gallery main style */
+#gallery{
+  margin: 2rem;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat( auto-fit , minmax(500px,1fr));
+}
+.img{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+img:hover {
+  box-shadow: 10px 10px 30px gray;
+  scale: 1.001;
+}

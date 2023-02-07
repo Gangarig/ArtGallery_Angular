@@ -1,0 +1,33 @@
+.pic {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  justify-content: space-around;
+}
+.pic img {
+  width: 55vw;
+}
+.pic .imgText {
+  width: 30vw;
+  height: 100vh;
+  margin-bottom: 15rem;
+}
+.pic .imgText h2 {
+  margin-bottom: 10rem;
+  font-family: Jaldi;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: justified;
+  font-size: 3rem;
+  line-height: 1.5rem;
+}
+.pic .imgText p {
+  font-family: Jaldi;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: justified;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}/*# sourceMappingURL=img-zoomin.component.css.map */
