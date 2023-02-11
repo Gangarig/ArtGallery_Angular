@@ -11,5 +11,16 @@
   m-1 text-decoration-none  " href="/gallery">GALLERY</a>
   <a class="btn border-0
   m-1 text-decoration-none  " href="/contact">CONTACT</a>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Language
+    </a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" (click)="english()" href="#">English</a></li>
+      <li><a class="dropdown-item" (click)="german()" href="#">German</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" (click)="mongolian()" href="#">Mongolian</a></li>
+    </ul>
+  </li>
   </div>
 </nav>

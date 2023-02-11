@@ -1,9 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LandingPageComponent } from './landing-page/landing-page.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { ImgZoominComponent } from './components/img-zoomin/img-zoomin.component';
@@ -16,7 +14,6 @@ import { ContactComponent } from './components/contact/contact.component';
 @NgModule({
   declarations: [
     AppComponent,
-    LandingPageComponent,
     HomePageComponent,
     GalleryComponent,
     ImgZoominComponent,
