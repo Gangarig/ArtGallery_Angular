@@ -1,27 +1,106 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+  // default
 nav{
-  height: 6rem;
-  .navlinks{
-    width: 50%;
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  .toggler {
+    display: none;
   }
-  .artist {
-      padding-top: 1rem;
-      padding-left: 1rem;
+  .artist{
+    .xBtn{
+      display: none;
+    }
   }
-  a{
-      width: auto;
-      font-family: Anaheim;
-      font-weight: 400;
-      letter-spacing: 0.1em;
-      text-align: left;
-      color: #000000;
+  .mobile {
+    .icons {
+      display: none;
+      i:hover{
+        color: #510d5f;
+      }
+    }
   }
-  a:hover {
-    color: darkgray;
-    scale: 1.1;
+.links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+  a {
+    text-decoration: none;
+    color: black;
+    font-family: Anaheim;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: 0.2em;
+    text-align: left;
+
   }
-  a:active{
-    scale: 0.9;
-  }
+   a:hover{
+    color: gray;
+    scale: 1.05;
+   }
 }
+}
+
+
+
+// mobile version
+@media screen and (max-width:425px) {
+  nav{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    .artist {
+      width: 100vw;
+      display: flex;
+      justify-content: space-between;
+      .xBtn{
+          display: block;
+      }
+    }
+    .mobile{
+      display: flex;
+      justify-content: space-between;
+      width: 100vw;
+      padding: 1rem;
+      .icons{
+        display: block;
+        i{
+
+        }
+      }
+    }
+  .links{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100vw;
+    padding-left: 0.8rem;
+    a {
+      text-decoration: none;
+      color: black;
+      font-family: Anaheim;
+      font-size: 1.5rem;
+      font-weight: 400;
+      line-height: 1.5rem;
+      letter-spacing: 0.2em;
+      text-align: left;
+
+    }
+     a:hover{
+      color: gray;
+      scale: 1.05;
+     }
+  }
+  }
+  
+
+
+}
+

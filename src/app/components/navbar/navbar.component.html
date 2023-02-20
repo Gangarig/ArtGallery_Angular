@@ -1,26 +1,31 @@
-<nav class="nav d-flex justify-content-between w-100 container-fluid">
-  <div>
-
+<!-- navbar -->
+<nav>
+  <!-- artist name -->
+  <div class="artist">
+  <app-artist></app-artist><span><i (click)="toggle()" [class]="'bi ' + iconClass + ' btn xBtn'"></i></span>
   </div>
-  <div class="d-flex align-items-center navlinks">
-  <a class="btn border-0
-  m-1 text-decoration-none  " href="/home">HOME</a>
-  <a class="btn border-0
-  m-1 text-decoration-none  " href="/about">ABOUT</a>
-  <a class="btn border-0
-  m-1 text-decoration-none  " href="/gallery">GALLERY</a>
-  <a class="btn border-0
-  m-1 text-decoration-none  " href="/contact">CONTACT</a>
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-      Language
-    </a>
-    <ul class="dropdown-menu">
-      <li><a class="dropdown-item" (click)="english()" href="#">English</a></li>
-      <li><a class="dropdown-item" (click)="german()" href="#">German</a></li>
-      <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" (click)="mongolian()" href="#">Mongolian</a></li>
-    </ul>
-  </li>
+  <!-- navlinks -->
+  <div class="links" id="navlinks" *ngIf="showNavLinks" >
+    <a href="/">Home</a>
+    <a href="about">About</a>
+    <a href="gallery">Gallery</a>
+    <a href="contact">Contact</a>
+  </div>
+  <!-- mobile version adjustments -->
+  <div id="mobile" class="mobile" *ngIf="showMobile">
+    <!-- language box -->
+    <div class="language">
+      <select value="language">
+        <option name="english" id="">English</option>
+        <option name="mongolian" id="">Mongolian</option>
+        <option name="german" id="">German</option>
+      </select>
+    </div>
+    <!-- icons -->
+    <div class="icons">
+    <i class="m-1 bi bi-facebook"></i>
+    <i class="m-1 bi bi-instagram"></i>
+    <i class="m-1 bi bi-envelope"></i>
+    </div>
   </div>
 </nav>
