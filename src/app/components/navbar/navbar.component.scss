@@ -1,106 +1,189 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
   // default
-nav{
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+.navbar {
   display: flex;
-  justify-content: center;
-  align-items: center;
   justify-content: space-between;
-  .toggler {
-    display: none;
-  }
-  .artist{
-    .xBtn{
-      display: none;
-    }
-  }
-  .mobile {
-    .icons {
-      display: none;
-      i:hover{
-        color: #510d5f;
-      }
-    }
-  }
-.links{
+  align-items: center;
+  background-color: white;
+  color: black;
+  width: 100vw;
+}
+.artist {
+    font-family: 'Abhaya Libre Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.05em;
+    color: #000000;
+    margin: .5rem;
+    padding-left: 3rem;
+}
+.nav-links {
+  padding-right: 2rem;
+}
+.nav-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: black;
+  padding: 1rem;
+  display: block;
+  font-family: Anaheim;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: 0.05em;
+  text-align: left;
+
+}
+.nav-links li a:hover {
+  scale: 1.05;
+}
+.nav-links li a:active{
+  scale: 0.95;
+}
+.nav-links li a:hover {
+  color: gray;
+}
+
+.nav-links ul li select{
+  border-radius: 10px;
+  width: 6rem;
+  height: 2.5rem;
+  font-size: 1.3rem;
+}
+
+
+
+.select {
   display: flex;
   justify-content: center;
   align-items: center;
-  justify-content: space-around;
-  width: 50%;
-  a {
-    text-decoration: none;
-    color: black;
-    font-family: Anaheim;
-    font-size: 1.5rem;
-    font-weight: 400;
-    line-height: 1.5rem;
-    letter-spacing: 0.2em;
-    text-align: left;
+}
+.select .icons {
+  display: none;
+}
+.toggle-button{
+  position: absolute;
+  top: .2rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+.toggle-icon{
+  color: black;
+}
 
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  border-radius: 10px;
+}
+//small laptop
+@media (max-width :1024px) {
+
+.artist{
+  font-size: 1.3rem;
+  line-height: 1.1rem;
+}
+.nav-links ul li a{
+  font-size: 1rem ;
+  line-height: 1rem;
+}
+.nav-links ul li select{
+  border-radius: 10px;
+  width: 4rem;
+  height: 1.5rem;
+  font-size: .7rem;
+}
+}
+
+//tablet
+@media (max-width :768px) {
+
+  .artist{
+    font-size: 1rem;
+    line-height: .8rem;
   }
-   a:hover{
-    color: gray;
-    scale: 1.05;
-   }
+  .nav-links ul li a{
+    font-size: .6rem ;
+    line-height: .6rem;
+  }
+  .nav-links ul li select{
+    border-radius: 10px;
+    width: 3.2rem;
+    height: 1rem;
+    font-size: .5rem;
+  }
 }
-}
-
-
-
-// mobile version
-@media screen and (max-width:425px) {
-  nav{
-
+// mobile screen
+@media (max-width :500px) {
+  .toggle-button {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-between;
+  }
+  .nav-links{
+    display: none;
+    width: 100%;
     flex-direction: column;
-    .artist {
-      width: 100vw;
-      display: flex;
-      justify-content: space-between;
-      .xBtn{
-          display: block;
-      }
-    }
-    .mobile{
-      display: flex;
-      justify-content: space-between;
-      width: 100vw;
-      padding: 1rem;
-      .icons{
-        display: block;
-        i{
-
-        }
-      }
-    }
-  .links{
+  }
+  .nav-links.active {
     display: flex;
+  }
+  .navbar {
     flex-direction: column;
     align-items: flex-start;
-    width: 100vw;
-    padding-left: 0.8rem;
-    a {
-      text-decoration: none;
-      color: black;
-      font-family: Anaheim;
-      font-size: 1.5rem;
-      font-weight: 400;
-      line-height: 1.5rem;
-      letter-spacing: 0.2em;
-      text-align: left;
-
-    }
-     a:hover{
-      color: gray;
-      scale: 1.05;
-     }
   }
+  .nav-links ul {
+    width: 100%;
+    flex-direction: column;
   }
-  
-
-
+  .select {
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+  }
+  .select .icons {
+    display: flex;
+  }
+  .select .icons i:hover {
+    color: #510d5f;
+  }
+  .artist{
+    font-size: 1.2rem;
+    line-height: 1rem;
+  }
+  .nav-links ul li a{
+    font-size: 1rem ;
+    line-height: 1rem;
+  }
+  .nav-links ul li select{
+    border-radius: 10px;
+    width: 6rem;
+    height: 1.5rem;
+    font-size: 1rem;
+  }
+  .nav-links li a:hover {
+    scale: 1;
+  }
 }
-

@@ -1,10 +1,7 @@
-<!-- artist name is here -->
-<app-artist></app-artist>
-<!-- navbar is here -->
-<app-navbar></app-navbar>
-
 <!-- gallery content is here -->
+<app-navbar></app-navbar>
 <div id="gallery" >
+
   <div class="img" *ngFor=" let pic of gallery ; index as i">
     <a routerLink="/imgzoomin/{{i}}"><img width="500px" src="/assets/images/gallery/{{pic.img}} "
      alt=""></a>
@@ -14,5 +11,4 @@
       </div>
   </div>
 </div>
-<!-- footer is here -->
 <app-footer></app-footer>

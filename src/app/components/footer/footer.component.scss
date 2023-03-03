@@ -3,6 +3,8 @@ footer {
   width: 100vw;
   background-color: white;
   display: flex;
+  justify-content: center;
+  align-items: center;
   justify-content: space-between;
  .icons{
   padding-left: 1rem;
@@ -16,13 +18,45 @@ footer {
       text-shadow: 1px 1px #510d5f;
   }
  }
-  p{
+ .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: 'Inter';
   font-style: normal;
   letter-spacing: 0.2em;
   text-align: left;
   font-size: 1rem;
   font-weight: 600;
-  padding-right: 4rem;
+  padding-right: 2rem;
   }
 }
+
+@media (max-width:800px)
+{
+  footer {
+   .icons{
+    display: none;
+   }
+   .text {
+    width: 100vw;
+    font-size: 0.8rem;
+    padding-right: 0;
+    }
+  }
+}
+
+@media (max-width:500px)
+{
+  footer {
+   .icons{
+    display: none;
+   }
+   .text {
+    width: 100vw;
+    font-size: 0.5rem;
+    padding-right: 0;
+    }
+  }
+}
+

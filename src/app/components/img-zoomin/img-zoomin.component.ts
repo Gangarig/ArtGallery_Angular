@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GalleryComponent } from '../gallery/gallery.component';
-import { gallery } from 'src/app/gallery';
+import { gallery } from 'src/app/galleryEn';
 import { interfaceGallery } from 'src/app/interfaceGallery';
 import { ActivatedRoute, Params } from '@angular/router';
 

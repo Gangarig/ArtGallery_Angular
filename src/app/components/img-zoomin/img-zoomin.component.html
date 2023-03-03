@@ -1,20 +1,13 @@
-<!-- artist name -->
-<app-artist></app-artist>
-<!-- navbar -->
-<app-navbar></app-navbar>
 
 <!-- full size img with details  -->
-<div class="pic">
-  <div>
-    <img src="/assets/images/full_sizes/{{img.img}}" alt="">
-  </div>
-  <div class="imgText">
-    <h2 class="text-center">{{img.name}}</h2>
-    <p>{{img.description}}</p>
-  </div>
-</div>
-
-<!-- footer -->
-<div class="w-50">
-<app-footer></app-footer>
+<div class="box">
+      <app-navbar></app-navbar>
+    <div class="content">
+      <img src="/assets/images/gallery/{{img.img}}" alt="">
+      <div class="details" >
+        <h2 class="text-center">{{img.name}}</h2>
+        <p>{{img.description}}</p>
+      </div>
+    </div>
+    <app-footer></app-footer>
 </div>

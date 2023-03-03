@@ -12,16 +12,17 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {
   }
-    showNavLinks = false;
-    showMobile = false;
-    iconClass = 'bi-list';
-    toggle() {
-      this.showNavLinks = !this.showNavLinks;
-      this.showMobile = !this.showMobile;
-      if (this.iconClass === 'bi-list') {
-        this.iconClass = 'bi-x-lg';
-      } else {
-        this.iconClass = 'bi-list';
-      }
-    }
+  navbarActive = false;
+  icon = 'bi bi-list';
+
+  toggleNavbar() {
+    this.navbarActive = !this.navbarActive;
+  }
+  iconChange(){
+    if (this.icon == "bi bi-list")
+    { this.icon = "bi bi-x-lg";}
+    else 
+    { this.icon = "bi bi-list"}
+  }
+
 }

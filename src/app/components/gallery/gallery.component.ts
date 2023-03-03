@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { gallery } from 'src/app/gallery';
+import { gallery } from 'src/app/galleryEn';
 import { interfaceGallery } from 'src/app/interfaceGallery';
 import { BehaviorSubject } from 'rxjs';
 import { ImgZoominComponent } from '../img-zoomin/img-zoomin.component';
