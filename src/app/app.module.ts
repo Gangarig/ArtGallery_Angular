@@ -7,9 +7,22 @@ import { GalleryComponent } from './components/gallery/gallery.component';
 import { ImgZoominComponent } from './components/img-zoomin/img-zoomin.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { ArtistComponent } from './components/artist/artist.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { HomeMNComponent } from './mongolian/home-mn/home-mn.component';
+import { AboutMNComponent } from './mongolian/about-mn/about-mn.component';
+import { NavbarMNComponent } from './mongolian/navbar-mn/navbar-mn.component';
+import { FooterMNComponent } from './mongolian/footer-mn/footer-mn.component';
+import { GalleryMNComponent } from './mongolian/gallery-mn/gallery-mn.component';
+import { ImgZoominMNComponent } from './mongolian/img-zoomin-mn/img-zoomin-mn.component';
+import { HomeGerComponent } from './german/home-ger/home-ger.component';
+import { NavbarGerComponent } from './german/navbar-ger/navbar-ger.component';
+import { FooterGerComponent } from './german/footer-ger/footer-ger.component';
+import { AboutGerComponent } from './german/about-ger/about-ger.component';
+import { ImgZoominGerComponent } from './german/img-zoomin-ger/img-zoomin-ger.component';
+import { GalleryGerComponent } from './german/gallery-ger/gallery-ger.component';
+import { ContactGerComponent } from './german/contact-ger/contact-ger.component';
+import { ContactMNComponent } from './mongolian/contact-mn/contact-mn.component';
 
 @NgModule({
   declarations: [
@@ -19,9 +32,22 @@ import { ContactComponent } from './components/contact/contact.component';
     ImgZoominComponent,
     FooterComponent,
     NavbarComponent,
-    ArtistComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    HomeMNComponent,
+    AboutMNComponent,
+    NavbarMNComponent,
+    FooterMNComponent,
+    GalleryMNComponent,
+    ImgZoominMNComponent,
+    HomeGerComponent,
+    NavbarGerComponent,
+    FooterGerComponent,
+    AboutGerComponent,
+    ImgZoominGerComponent,
+    GalleryGerComponent,
+    ContactGerComponent,
+    ContactMNComponent
   ],
   imports: [
     BrowserModule,

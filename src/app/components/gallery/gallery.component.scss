@@ -11,7 +11,40 @@
   align-items: center;
   flex-direction: column;
 }
+#img {
+  width: 500px;
+
+}
 img:hover {
   box-shadow: 10px 10px 30px gray;
   scale: 1.001;
+}
+@media (max-width:1024px) {
+  #img{
+    width: 400px;
+  }
+  #gallery{
+    margin: 2rem;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat( auto-fit , minmax(400px,1fr));
+  }
+}
+
+@media (max-width:768px) {
+  #img{
+    width: 300px;
+  }
+  #gallery{
+    margin: 2rem;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat( auto-fit , minmax(300px,1fr));
+  }
+}
+@media (max-width:500px) {
+
+  #img{
+
+  }
 }

@@ -1,14 +1,37 @@
-  <div class="">
-    <app-navbar></app-navbar>
-    <form action="">
-      <h2>WE WOULD LOVE TO HEAR FROM YOU!</h2>
-      <p>FULL NAME</p>
-      <input type="text" id="fullName" name="fullName">
-      <p>EMAIL ADDRESS</p>
-      <input type="text" id="email" name="">
-      <P>MESSAGE</P>
-      <input type="text" name="message" id="">
-      <button>SUBMIT</button>
-    </form>
-    <app-footer></app-footer>
+
+<app-navbar></app-navbar>
+<div class="box">
+<form action="https://www.actionforms.io/e/r/artgallery" method="POST">
+  <div class="rendered-form customStyle">
+    <div class="">
+        <h2 id="control-9571445">
+            WE WOULD LOVE TO HEAR FROM YOU!
+        </h2>
+    </div>
+    <div class="formbuilder-text form-group field-text-1677814398062-0">
+        <label class="formbuilder-text-label" for="text-1677814398062-0">
+            FULL NAME
+        </label>
+        <input class="form-control" id="text-1677814398062-0" maxlength="100" name="text-1677814398062-0" placeholder="FIRST AND LAST" type="text"/>
+    </div>
+    <div class="formbuilder-text form-group field-text-1677814316702-0">
+        <label class="formbuilder-text-label" for="text-1677814316702-0">
+            EMAIL ADDRESS
+        </label>
+        <input class="form-control" id="text-1677814316702-0" maxlength="70" name="text-1677814316702-0" placeholder="EXAMPLE@MAIL.COM" type="email"/>
+    </div>
+    <div class="formbuilder-textarea form-group field-textarea-1677814465568-0">
+        <label class="formbuilder-textarea-label" for="textarea-1677814465568-0">
+            MESSAGE
+        </label>
+        <textarea class="form-control" id="textarea-1677814465568-0" maxlength="500" name="textarea-1677814465568-0" rows="10"></textarea>
+    </div>
+    <div class="formbuilder-button form-group field-button-1677814497302-0">
+        <button class="btn-default btn" id="button-1677814497302-0" name="button-1677814497302-0" style="default" type="submit">
+            SUBMIT
+        </button>
+    </div>
   </div>
+</form>
+</div>
+<app-footer class="fixed-bottom"></app-footer>

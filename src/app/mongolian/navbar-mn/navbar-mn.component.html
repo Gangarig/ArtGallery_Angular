@@ -1,0 +1,28 @@
+<!-- navbar  -->
+<nav class="navbar">
+  <div class="artist">CHINBAT JAGDAR</div>
+  <p href="" (click)="toggleNavbar()" class="toggle-button ">
+    <i (click)="iconChange()" class="fs-2 toggle-icon {{icon}}"
+    ></i>
+  </p>
+  <div class="nav-links" [ngClass]="{'active': navbarActive}">
+    <ul class="container">
+    <li><a href="homeMn">НҮҮР ХУУДАС</a></li>
+    <li><a href="aboutMn">ТАНИЛЦУУЛГА</a></li>
+    <li><a href="galleryMn">БҮТЭЭЛҮҮД</a></li>
+    <li><a href="contactMn">ХОЛБОО БАРИХ</a></li>
+    <li class="select">
+      <select name="language" id="language" onchange="redirectToPage()">
+        <option value="english ">Mонгол</option>
+        <option value="german ">German</option>
+        <option value="mongolian ">English</option>
+      </select>
+      <div class="icons">
+        <i class="bi bi-facebook p-1"></i>
+        <i class="bi bi-envelope p-1"></i>
+        <i class="bi bi-instagram p-1"></i>
+      </div>
+    </li>
+    </ul>
+  </div>
+</nav>

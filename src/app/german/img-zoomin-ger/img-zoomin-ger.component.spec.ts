@@ -1,17 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { GalleryComponent } from './gallery.component';
 
-describe('GalleryComponent', () => {
-  let component: GalleryComponent;
-  let fixture: ComponentFixture<GalleryComponent>;
+import { ImgZoominGerComponent } from './img-zoomin-ger.component';
+
+describe('ImgZoominGerComponent', () => {
+  let component: ImgZoominGerComponent;
+  let fixture: ComponentFixture<ImgZoominGerComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ GalleryComponent ]
+      declarations: [ ImgZoominGerComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(GalleryComponent);
+    fixture = TestBed.createComponent(ImgZoominGerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
