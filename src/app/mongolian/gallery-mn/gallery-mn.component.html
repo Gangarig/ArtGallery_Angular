@@ -1,1 +1,14 @@
-<p>gallery-mn works!</p>
+<!-- gallery content is here -->
+<app-navbar-mn></app-navbar-mn>
+<div id="gallery" >
+
+  <div class="img" *ngFor=" let pic of gallery ; index as i">
+    <a routerLink="/imgzoominMn/{{i}}"><img id="img" src="/assets/images/gallery/{{pic.img}} "
+     alt=""></a>
+      <div class="text-center pt-4">
+      <h3>{{pic.name}}</h3>
+      <p>{{pic.artist}}</p>
+      </div>
+  </div>
+</div>
+<app-footer-mn></app-footer-mn>

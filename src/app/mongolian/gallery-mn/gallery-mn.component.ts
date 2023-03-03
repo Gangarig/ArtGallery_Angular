@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { interfaceGallery } from 'src/app/interfaceGallery';
+import { BehaviorSubject } from 'rxjs';
+import { galleryMn } from '../../galleryMn';
 
 @Component({
   selector: 'app-gallery-mn',
@@ -11,5 +14,5 @@ export class GalleryMNComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  gallery : Array<interfaceGallery> = galleryMn;
 }

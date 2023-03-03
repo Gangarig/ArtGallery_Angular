@@ -1,0 +1,76 @@
+.box {
+  height: 800px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.customStyle {
+  width: 30vw;
+}
+h2 {
+font-family: 'Montserrat';
+font-size: 14px;
+font-weight: 700;
+line-height: 15px;
+letter-spacing: 0.16em;
+text-align: left;
+}
+label{
+  font-family: 'Montserrat';
+font-size: 10px;
+font-weight: 700;
+line-height: 11px;
+letter-spacing: 0.16em;
+text-align: left;
+}
+input {
+  border: 1px solid black;
+  border-radius: 0;
+}
+textarea{
+  border: 1px solid black;
+  border-radius: 0;
+}
+input::placeholder{
+  font-family: 'Montserrat';
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 11px;
+  letter-spacing: 0.16em;
+  text-align: left;
+}
+button {
+  border: 1px solid black;
+  border-radius: 0;
+  margin-top: 1rem;
+  font-family: 'Montserrat';
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 11px;
+  letter-spacing: 0.16em;
+  text-align: left;
+
+}
+
+
+@media (max-width:500px) {
+  .customStyle{
+    width: 80vw;
+  }
+}
+
+
+
+@media (max-width:768px) {
+  .customStyle{
+    width: 50vw;
+  }
+}
+
+
+@media (max-width:1024px) {
+  .customStyle{
+    width: 50vw;
+  }
+}

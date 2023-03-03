@@ -39,12 +39,12 @@ import { ContactMNComponent } from './mongolian/contact-mn/contact-mn.component'
     NavbarMNComponent,
     FooterMNComponent,
     GalleryMNComponent,
-    ImgZoominMNComponent,
     HomeGerComponent,
     NavbarGerComponent,
     FooterGerComponent,
     AboutGerComponent,
     ImgZoominGerComponent,
+    ImgZoominMNComponent,
     GalleryGerComponent,
     ContactGerComponent,
     ContactMNComponent

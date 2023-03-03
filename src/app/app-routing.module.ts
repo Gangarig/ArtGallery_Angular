@@ -23,16 +23,13 @@ import { ContactGerComponent } from './german/contact-ger/contact-ger.component'
 import { ContactMNComponent } from './mongolian/contact-mn/contact-mn.component';
 
 
-
-
-
 const routes: Routes = [
-  {path:'home',component:HomePageComponent},
+  {path:'',component:HomePageComponent},
   {path:'homeGer',component:HomeGerComponent},
   {path:'homeMn',component:HomeMNComponent},
   {path:'gallery',component:GalleryComponent},
   {path:'galleryGer',component:GalleryGerComponent},
-  {path:'galleryMN',component:GalleryMNComponent},
+  {path:'galleryMn',component:GalleryMNComponent},
   {path:'imgzoomin/:i',component:ImgZoominComponent},
   {path:'imgzoominGer/:i',component:ImgZoominGerComponent},
   {path:'imgzoominMn/:i',component:ImgZoominMNComponent},
@@ -47,9 +44,7 @@ const routes: Routes = [
   {path:'aboutMn',component:AboutMNComponent},
   {path:'contact',component:ContactComponent},
   {path:'contactGer',component:ContactGerComponent},
-  {path:'contactMn',component:ContactMNComponent},
-
-
+  {path:'contactMn',component:ContactMNComponent}
 ];
 
 @NgModule({

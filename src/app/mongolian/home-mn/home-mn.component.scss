@@ -1,0 +1,21 @@
+
+// background style
+#background {
+  height: 100vh;
+  width: auto;
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: left top;
+  animation: slide 500s linear infinite;
+  background-image: url(/assets/images/home_page/merged_img.jpg);
+}
+
+@keyframes slide {
+  from {
+    background-position: 100% top;
+  }
+  to {
+    background-position: -100% top;
+  }
+}
+
