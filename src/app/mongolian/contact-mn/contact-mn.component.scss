@@ -7,6 +7,8 @@
 }
 .customStyle {
   width: 30vw;
+  display: flex;
+  flex-direction: column;
 }
 h2 {
 font-family: 'Montserrat';
@@ -18,7 +20,7 @@ text-align: left;
 }
 label{
   font-family: 'Montserrat';
-font-size: 10px;
+font-size: 12px;
 font-weight: 700;
 line-height: 11px;
 letter-spacing: 0.16em;
@@ -34,8 +36,8 @@ textarea{
 }
 input::placeholder{
   font-family: 'Montserrat';
-  font-size: 10px;
-  font-weight: 700;
+  font-size: 12px;
+  font-weight: bold;
   line-height: 11px;
   letter-spacing: 0.16em;
   text-align: left;
@@ -50,7 +52,11 @@ button {
   line-height: 11px;
   letter-spacing: 0.16em;
   text-align: left;
-
+  width: 6rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
