@@ -4,8 +4,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
-.customStyle {
+.width {
   width: 30vw;
   display: flex;
   flex-direction: column;
@@ -17,6 +18,7 @@ font-weight: 700;
 line-height: 15px;
 letter-spacing: 0.16em;
 text-align: left;
+
 }
 label{
   font-family: 'Montserrat';
@@ -27,12 +29,14 @@ letter-spacing: 0.16em;
 text-align: left;
 }
 input {
+  width: 100%;
   border: 1px solid black;
   border-radius: 0;
 }
 textarea{
   border: 1px solid black;
   border-radius: 0;
+  width: 100%;
 }
 input::placeholder{
   font-family: 'Montserrat';
@@ -61,7 +65,7 @@ button {
 
 
 @media (max-width:500px) {
-  .customStyle{
+  .width{
     width: 80vw;
   }
 }
@@ -69,14 +73,14 @@ button {
 
 
 @media (max-width:768px) {
-  .customStyle{
+  .width{
     width: 50vw;
   }
 }
 
 
 @media (max-width:1024px) {
-  .customStyle{
+  .width{
     width: 50vw;
   }
 }

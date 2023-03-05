@@ -1,27 +1,25 @@
 
 <app-navbar></app-navbar>
-<div class="box">
-<form name="contact" method="POST" data-netlify="true">
-  <div class="customStyle">
-        <h2 class="p-1 m-1">
-            WE WOULD LOVE TO HEAR FROM YOU!
-        </h2>
-        <label class="p-1 m-1">
-            FULL NAME
-        </label>
-        <input class="p-1 m-1" maxlength="100" name="name" placeholder="FIRST AND LAST" type="text"/>
-        <label class="p-1 m-1">
-            EMAIL ADDRESS
-        </label >
-        <input class="p-1 m-1"  maxlength="70" name="email" placeholder="EXAMPLE@MAIL.COM" type="email"/>
-        <label class="p-1 m-1" >
-            MESSAGE
-        </label>
-        <textarea class="p-1 m-1"  maxlength="500" name="message" rows="10"></textarea>
-        <button class="btn-default btn p-1 m-1" name="submit" type="submit">
-            SUBMIT
-        </button>
+<form class="box customStyle" name="contact" method="POST" data-netlify="true">
+  <div class="width">
+  <h2 class="p-1 m-1">
+    WE WOULD LOVE TO HEAR FROM YOU!
+  </h2>
+  <p>
+    <label class="p-1 m-1">FULL NAME </label><br>
+    <input class="p-1 m-1" placeholder="FIRST AND LAST NAME" max="100" type="text" name="name" />
+  </p>
+  <p>
+    <label class="p-1 m-1">EMAIL </label><br>
+    <input class="p-1 m-1" placeholder="EXAMPLE@MAIL>COM" maxlength="100" type="email" name="email" />
+  </p>
+  <p>
+    <label class="p-1 m-1">MESSAGE</label><br>
+    <textarea class="p-1 m-1" rows="10" maxlength="500" name="message"></textarea>
+  </p>
+  <p>
+    <button class="btn" type="submit">SUBMIT</button>
+  </p>
   </div>
 </form>
-</div>
 <app-footer class="fixed-bottom"></app-footer>
