@@ -1,7 +1,6 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
   // default
 *{
-  box-sizing: border-box;
 }
 body{
   margin: 0;
@@ -14,17 +13,21 @@ body{
   background-color: white;
   color: black;
   width: 100vw;
+  overflow: hidden;
 }
 .artist {
-    font-family: 'Abhaya Libre Medium';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 2rem;
-    line-height: 1.75rem;
-    letter-spacing: 0.05em;
-    color: #000000;
-    margin: .5rem;
-    padding-left: 3rem;
+padding-left: 1rem;
+font-family: 'Abhaya Libre Medium';
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 25px;
+/* identical to box height, or 78% */
+
+letter-spacing: 0.05em;
+
+color: #000000;
+
 }
 .nav-links {
   padding-right: 2rem;
@@ -45,12 +48,17 @@ body{
   color: black;
   padding: 1rem;
   display: block;
-  font-family: Anaheim;
-  font-size: 2rem;
-  font-weight: 400;
-  line-height: 2rem;
-  letter-spacing: 0.05em;
   text-align: left;
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 100%;
+  /* identical to box height, or 24px */
+
+  letter-spacing: 0.2em;
+
+  color: #000000;
 
 }
 .nav-links li a:hover {
@@ -107,9 +115,8 @@ body{
   font-size: 1.3rem;
   line-height: 1.1rem;
 }
-.nav-links ul li a{
-  font-size: 1rem ;
-  line-height: 1rem;
+.nav-links li a {
+  font-size: 15px;
 }
 .nav-links ul li select{
   border-radius: 10px;
@@ -126,9 +133,8 @@ body{
     font-size: 1rem;
     line-height: .8rem;
   }
-  .nav-links ul li a{
-    font-size: .6rem ;
-    line-height: .6rem;
+  .nav-links li a {
+    font-size: 15px;
   }
   .nav-links ul li select{
     border-radius: 10px;
@@ -140,7 +146,7 @@ body{
 // mobile screen
 @media (max-width :550px) {
   .artist {
-    padding-left: 0;
+    padding-left: 1rem;
   }
   .toggle-button {
     display: flex;
@@ -176,9 +182,8 @@ body{
     font-size: 1.2rem;
     line-height: 1rem;
   }
-  .nav-links ul li a{
-    font-size: 1rem ;
-    line-height: 1rem;
+  .nav-links li a {
+    font-size: 25px;
   }
   .nav-links ul li select{
     border-radius: 10px;

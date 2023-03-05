@@ -1,1 +1,14 @@
-<p>gallery-ger works!</p>
+<!-- gallery content is here -->
+<app-navbar-ger></app-navbar-ger>
+<div id="gallery" >
+
+  <div class="img" *ngFor=" let pic of galleryGer ; index as i">
+    <a routerLink="/imgzoominGer/{{i}}"><img id="img" src="/assets/images/gallery/{{pic.img}} "
+     alt=""></a>
+      <div class="text-center pt-4">
+      <h3>{{pic.name}}</h3>
+      <p>{{pic.artist}}</p>
+      </div>
+  </div>
+</div>
+<app-footer-ger></app-footer-ger>

@@ -1,3 +1,4 @@
+
 <!-- navbar  -->
 <nav class="navbar">
   <div class="artist">CHINBAT JAGDAR</div>
@@ -7,22 +8,25 @@
   </p>
   <div class="nav-links" [ngClass]="{'active': navbarActive}">
     <ul class="container">
-    <li><a href="homeMn">НҮҮР ХУУДАС</a></li>
-    <li><a href="aboutMn">ТАНИЛЦУУЛГА</a></li>
-    <li><a href="galleryMn">БҮТЭЭЛҮҮД</a></li>
-    <li><a href="contactMn">ХОЛБОО БАРИХ</a></li>
+      <li><a routerLink="/homeMn">НҮҮР ХУУДАС</a></li>
+      <li><a routerLink="/homeMn">ТАНИЛЦУУЛГА</a></li>
+      <li><a routerLink="/galleryMn">БҮТЭЭЛҮҮД</a></li>
+      <li><a routerLink="/contactMn">ХОЛБОО БАРИХ</a></li>
     <li class="select">
-      <select name="language" id="language" onchange="redirectToPage()">
-        <option value="english ">Mонгол</option>
-        <option value="german ">German</option>
-        <option value="mongolian ">English</option>
+      <select name="language" id="language" [(ngModel)]="selectedLanguage" (change)="navigateToPage()">
+        <option value="mongolian">Монгол</option>
+        <option value="german">German</option>
+        <option value="english">English</option>
       </select>
       <div class="icons">
-        <i class="bi bi-facebook p-1"></i>
-        <i class="bi bi-envelope p-1"></i>
-        <i class="bi bi-instagram p-1"></i>
+        <a href="https://www.facebook.com/chinbat.thangka"><i class="m-1 bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/chinbat.thangka/"><i class="m-1 bi bi-instagram"></i></a>
+        <a href="mailto:chinbat.gallery@gmail.com"><i class="m-1 bi bi-envelope"></i></a>
       </div>
     </li>
     </ul>
   </div>
 </nav>
+
+
+

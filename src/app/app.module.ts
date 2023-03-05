@@ -23,7 +23,7 @@ import { ImgZoominGerComponent } from './german/img-zoomin-ger/img-zoomin-ger.co
 import { GalleryGerComponent } from './german/gallery-ger/gallery-ger.component';
 import { ContactGerComponent } from './german/contact-ger/contact-ger.component';
 import { ContactMNComponent } from './mongolian/contact-mn/contact-mn.component';
-
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -51,7 +51,8 @@ import { ContactMNComponent } from './mongolian/contact-mn/contact-mn.component'
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -6,11 +6,15 @@ footer {
   justify-content: center;
   align-items: center;
   justify-content: space-between;
+  overflow: hidden;
  .icons{
   padding-left: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  a{
+    color: black;
+  }
   i{
       font-size: 2rem;
   }:hover {

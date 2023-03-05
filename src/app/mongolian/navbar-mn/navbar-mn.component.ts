@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, Directive, OnInit,ElementRef, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-navbar-mn',
   templateUrl: './navbar-mn.component.html',
@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarMNComponent implements OnInit {
 
-  constructor() { }
+  constructor( private router:Router) { }
 
   ngOnInit(): void {
   }
@@ -24,14 +24,15 @@ export class NavbarMNComponent implements OnInit {
     { this.icon = "bi bi-list"}
   }
 
-  languageSelect = document.getElementById("language");
-  redirectToPage(){
-    // if (selectedLanguage === "english") {
-    //   window.location.href = "english-page.html";
-    // } else if (selectedLanguage === "german") {
-    //   window.location.href = "german-page.html";
-    // } else if (selectedLanguage === "mongolian") {
-    //   window.location.href = "mongolian-page.html";
-    // }
-  }
+  @ViewChild('language') languages!: ElementRef;
+	selectedLanguage: string = 'mongolian'; // default selected language
+    navigateToPage() {
+      if (this.selectedLanguage === 'english') {
+        this.router.navigate(['/']);
+      } else if (this.selectedLanguage === 'german') {
+        this.router.navigate(['/homeGer']);
+      } else if (this.selectedLanguage === 'mongolian') {
+        this.router.navigate(['/homeMn']);
+      }
+    }
 }
