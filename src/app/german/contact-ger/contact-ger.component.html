@@ -1,36 +1,27 @@
 <app-navbar></app-navbar>
 <div class="box">
-<form action="https://www.actionforms.io/e/r/artgallery" method="POST">
-  <div class="rendered-form customStyle">
-    <div class="">
-        <h2 id="control-9571445">
-          WIR WÜRDEN UNS FREUEN, VON IHNEN ZU HÖREN!
-        </h2>
-    </div>
-    <div class="formbuilder-text form-group field-text-1677814398062-0">
-        <label class="formbuilder-text-label" for="text-1677814398062-0">
-          VOLLSTÄNDIGER NAME
-        </label>
-        <input class="form-control" id="text-1677814398062-0" maxlength="100" name="text-1677814398062-0" placeholder="VOR UND NACHNAME" type="text"/>
-    </div>
-    <div class="formbuilder-text form-group field-text-1677814316702-0">
-        <label class="formbuilder-text-label" for="text-1677814316702-0">
-          EMAIL ADDRESS
-        </label>
-        <input class="form-control" id="text-1677814316702-0" maxlength="70" name="text-1677814316702-0" placeholder="EXAMPLLE@MAIL.COM" type="email"/>
-    </div>
-    <div class="formbuilder-textarea form-group field-textarea-1677814465568-0">
-        <label class="formbuilder-textarea-label" for="textarea-1677814465568-0">
-            MESSAGE
-        </label>
-        <textarea class="form-control" id="textarea-1677814465568-0" maxlength="500" name="textarea-1677814465568-0" rows="10"></textarea>
-    </div>
-    <div class="formbuilder-button form-group field-button-1677814497302-0">
-        <button class="btn-default btn" id="button-1677814497302-0" name="button-1677814497302-0" style="default" type="submit">
+  <form name="contact" method="POST" data-netlify="true">
+    <div class="customStyle">
+          <h2 class="p-1 m-1">
+            WIR WÜRDEN UNS FREUEN, VON IHNEN ZU HÖREN!
+          </h2>
+          <label class="p-1 m-1">
+            VOLLSTÄNDIGER NAME
+          </label>
+          <input class="p-1 m-1" maxlength="100" name="name" placeholder="VOR UND NACHNAME" type="text"/>
+          <label class="p-1 m-1">
+              EMAIL ADDRESS
+          </label >
+          <input class="p-1 m-1"  maxlength="70" name="email" placeholder="EXAMPLE@MAIL.COM" type="email"/>
+          <label class="p-1 m-1" >
+              MESSAGE
+          </label>
+          <textarea class="p-1 m-1"  maxlength="500" name="message" rows="10"></textarea>
+          <button class="btn-default btn p-1 m-1" name="submit" type="submit">
             ABSENDEN
-        </button>
+          </button>
     </div>
-  </div>
-</form>
+  </form>
 </div>
 <app-footer class="fixed-bottom"></app-footer>
+
