@@ -24,6 +24,11 @@ import { GalleryGerComponent } from './german/gallery-ger/gallery-ger.component'
 import { ContactGerComponent } from './german/contact-ger/contact-ger.component';
 import { ContactMNComponent } from './mongolian/contact-mn/contact-mn.component';
 import { FormsModule } from '@angular/forms';
+import { PageNotFoundComponent } from './components/contact/page-not-found/page-not-found.component';
+import { SuccessComponent } from './components/contact/success/success.component';
+import { FeedbackComponent } from './components/contact/feedback/feedback.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,12 +52,17 @@ import { FormsModule } from '@angular/forms';
     ImgZoominMNComponent,
     GalleryGerComponent,
     ContactGerComponent,
-    ContactMNComponent
+    ContactMNComponent,
+    PageNotFoundComponent,
+    SuccessComponent,
+    FeedbackComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

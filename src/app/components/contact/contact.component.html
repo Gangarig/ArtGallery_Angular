@@ -1,25 +1,31 @@
 
 <app-navbar></app-navbar>
-<form class="box customStyle" name="contact" method="POST" data-netlify="true">
+<div class="error" [class.hidden]="errorMsg.length == 0">
+  <p>{{errorMsg}}</p>
+  <span (click)="closeError()" class="close">✖︎</span>
+</div>
+<form class="box customStyle" name="contact" method="POST" data-netlify="true" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
   <div class="width">
   <h2 class="p-1 m-1">
     WE WOULD LOVE TO HEAR FROM YOU!
   </h2>
   <p>
     <label class="p-1 m-1">FULL NAME </label><br>
-    <input class="p-1 m-1" placeholder="FIRST AND LAST NAME" max="100" type="text" name="name" />
+    <input class="p-1 m-1" placeholder="FIRST AND LAST NAME" max="100" type="text" name="fullName" formControlName="fullName" />
   </p>
   <p>
     <label class="p-1 m-1">EMAIL </label><br>
-    <input class="p-1 m-1" placeholder="EXAMPLE@MAIL>COM" maxlength="100" type="email" name="email" />
+    <input class="p-1 m-1" placeholder="EXAMPLE@MAIL.COM" maxlength="100" type="email" name="email" formControlName="email">
   </p>
   <p>
     <label class="p-1 m-1">MESSAGE</label><br>
-    <textarea class="p-1 m-1" rows="10" maxlength="500" name="message"></textarea>
+    <textarea formControlName="message" class="p-1 m-1" rows="10" maxlength="500" name="message"></textarea>
   </p>
   <p>
-    <button class="btn" type="submit">SUBMIT</button>
+    <button class="btn" type="submit" [disabled]="contactForm.invalid">SUBMIT</button>
   </p>
   </div>
 </form>
 <app-footer class="fixed-bottom"></app-footer>
+
+
