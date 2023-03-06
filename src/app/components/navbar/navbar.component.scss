@@ -148,7 +148,7 @@ color: #000000;
 // mobile screen
 @media (max-width :550px) {
   .artist {
-    padding-left: 0;
+    padding-left: 1rem;
   }
   .toggle-button {
     display: flex;
@@ -189,8 +189,7 @@ color: #000000;
     padding-left: 1rem;
   }
   .nav-links ul li a{
-    font-size: 1rem ;
-    line-height: 1rem;
+    font-size: 1rem;
   }
   .nav-links ul li select{
     border-radius: 10px;

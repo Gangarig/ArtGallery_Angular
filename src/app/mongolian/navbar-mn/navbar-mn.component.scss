@@ -172,18 +172,18 @@ color: #000000;
     justify-content: space-between;
     padding: .5rem;
   }
-  .select .icons {
+  .icons {
     display: flex;
   }
-  .select .icons i:hover {
+   .icons i:hover {
     color: #510d5f;
   }
   .artist{
     font-size: 1.2rem;
     line-height: 1rem;
   }
-  .nav-links li a {
-    font-size: 25px;
+  .nav-links ul li a {
+    font-size: 1rem;
   }
   .nav-links ul li select{
     border-radius: 10px;
