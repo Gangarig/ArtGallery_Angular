@@ -52,7 +52,7 @@ color: #000000;
   font-family: 'Source Sans Pro';
   font-style: normal;
   font-weight: 300;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 100%;
   /* identical to box height, or 24px */
 
@@ -65,7 +65,7 @@ color: #000000;
   scale: 1.05;
 }
 .nav-links li a:active{
-  scale: 0.95;
+  scale: 1;
 }
 .nav-links li a:hover {
   color: gray;
@@ -75,7 +75,7 @@ color: #000000;
   border-radius: 10px;
   width: 6rem;
   height: 2.5rem;
-  font-size: 1.3rem;
+  font-size: 20px;
 }
 
 
@@ -90,7 +90,7 @@ color: #000000;
 }
 .toggle-button{
   position: absolute;
-  top: .2rem;
+  top: 0;
   right: 1rem;
   display: none;
   flex-direction: column;
@@ -111,13 +111,9 @@ color: #000000;
 //small laptop
 @media (max-width :1300px) {
 
-.artist{
-  font-size: 1.3rem;
-  line-height: 1.1rem;
-}
 .nav-links ul li a{
-  font-size: 15px ;
-
+  font-size: 1rem ;
+  line-height: 1rem;
 }
 .nav-links ul li select{
   border-radius: 10px;
@@ -128,12 +124,8 @@ color: #000000;
 }
 
 //tablet
-@media (max-width :768px) {
+@media (max-width :1000px) {
 
-  .artist{
-    font-size: 1rem;
-    line-height: .8rem;
-  }
   .nav-links ul li a{
     font-size: .6rem ;
     line-height: .6rem;
@@ -146,7 +138,7 @@ color: #000000;
   }
 }
 // mobile screen
-@media (max-width :550px) {
+@media (max-width :766px) {
   .artist {
     padding-left: 1rem;
   }
@@ -172,21 +164,24 @@ color: #000000;
   .select {
     display: flex;
     justify-content: space-between;
-    padding: .5rem;
+    padding-left: 1rem;
   }
   .select .icons {
     display: flex;
+  }
+  .select .icons a i {
+    font-size: 20px;
   }
   .select .icons i:hover {
     color: #510d5f;
   }
   .artist{
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1rem;
+    padding-left: 1rem;
   }
   .nav-links ul li a{
-    font-size: 1rem ;
-    line-height: 1rem;
+    font-size: 1rem;
   }
   .nav-links ul li select{
     border-radius: 10px;
