@@ -8,16 +8,10 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   </head>
 <body>
-  <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-    <input type="text" name="name" />
-    <input
-      type="email"
-      name="email"
-      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-    />
-    <input type="phone" name="phone" />
-    <textarea type="text" name="message" minlength="30"></textarea>
-    <input type="checkbox" name="subscribe" />
+  <form name="contact-form" netlify hidden>
+    <input type="text" name="name"/>
+    <input type="text" name="email"/>
+    <input type="text" name="message">
   </form>
   <app-root></app-root>
 </body>

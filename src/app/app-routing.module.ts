@@ -21,10 +21,6 @@ import { AboutMNComponent } from './mongolian/about-mn/about-mn.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ContactGerComponent } from './german/contact-ger/contact-ger.component';
 import { ContactMNComponent } from './mongolian/contact-mn/contact-mn.component';
-import { FeedbackComponent } from './components/contact/feedback/feedback.component';
-import { SuccessComponent } from './components/contact/success/success.component';
-
-
 const routes: Routes = [
   {path:'',component:HomePageComponent},
   {path:'homeGer',component:HomeGerComponent},
@@ -46,9 +42,8 @@ const routes: Routes = [
   {path:'aboutMn',component:AboutMNComponent},
   {path:'contact',component:ContactComponent},
   {path:'contactGer',component:ContactGerComponent},
-  {path:'feedback',component:FeedbackComponent},
-  {path:'success',component:SuccessComponent},
-  {path:'**',component:ContactMNComponent}
+  {path:'contactMn',component:ContactMNComponent}
+
 ];
 
 @NgModule({
