@@ -18,7 +18,7 @@ export class ContactComponent implements AfterViewInit {
   isError = false;
   error?: string;
 
-  model: contactFormData = { name: '', message: '', 'contact': 'message-form', email: '' };
+  model: contactFormData = { name: '', message: '', 'contact-form': 'message-form', email: '' };
 
   constructor(private netlifyForms: NetlifyFormsService) {
   }
