@@ -61,12 +61,82 @@ textarea {
   border-radius: 0%;
 
 }
-@media (max-width:500px) {
-
+textarea:active {
+  outline: none;
 
 }
-@media (max-width:768px) {
+button:disabled {
+  color: black;
+  border: 1px solid black;
+}
 
+
+@media (max-width:1300px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 50vh;
+  }
+  input {
+    font-size: 12px;
+    width: 50vw;
+  }
+  label {
+    font-size: 13px;
+    width: 50vw;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  textarea{
+    width: 50vw;
+  }
 }
 @media (max-width:1024px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    height: 50vh;
+  }
+  input {
+    font-size: 12px;
+    width: 60vw;
+  }
+  label {
+    font-size: 13px;
+    width: 60vw;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  textarea{
+    width: 60vw;
+  }
+}
+
+@media (max-width:500px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 50vh;
+  }
+  input {
+    font-size: 12px;
+    width: 80vw;
+  }
+  label {
+    font-size: 13px;
+    width: 80vw;
+  }
+  h2 {
+    font-size: 18px;
+
+  }
+  textarea {
+    width: 80vw;
+  }
+
 }
