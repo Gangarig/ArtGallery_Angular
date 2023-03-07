@@ -1,5 +1,7 @@
 
 <app-navbar></app-navbar>
+<div class="alert alert-danger mt-5" *ngIf="isError">There was an error {{ error }}</div>
+<div class="alert alert-success mt-5" *ngIf="isSuccess">Submission sent Thank you for contacting us</div>
 <div class="box">
 <form class="needs-validation" name="example-form" novalidate #formRef="ngForm" [hidden]="isSuccess || isError">
   <h2>WE WOULD LOVE TO HEAR FROM YOU!</h2>
@@ -15,6 +17,5 @@
   <button class="btn mt-1 rounded-0" type="submit" *ngIf="!beingSubmitted" id="submitButton" [disabled]="!name.valid || !message.valid || (email.touched && email.value != '' && !email.valid)">Submit</button>
 </form>
 </div>
-<div class="alert alert-danger" *ngIf="isError">There was an error {{ error }}</div>
-<div class="alert alert-success" *ngIf="isSuccess">Submission sent Thank you for contacting us</div>
+
 <app-footer class="fixed-bottom"></app-footer>
