@@ -1,21 +1,25 @@
 
 <app-navbar></app-navbar>
-<div class="alert alert-danger mt-5" *ngIf="isError">There was an error {{ error }}</div>
-<div class="alert alert-success mt-5" *ngIf="isSuccess">Submission sent Thank you for contacting us</div>
 <div class="box">
-<form class="needs-validation" name="contact-form" novalidate #formRef="ngForm" [hidden]="isSuccess || isError">
-  <h2>WE WOULD LOVE TO HEAR FROM YOU!</h2>
-  <label for="name">  FULL NAME </label>
-  <input name="name" placeholder="FIRST AND LAST" type="text" id="name" required="required" [(ngModel)]="model.name" #name="ngModel" />
+  <div class="error" [class.hidden]="errorMsg.length == 0">
+    <p>{{errorMsg}}</p>
+    <span (click)="closeError()" class="close">✖︎</span>
+  </div>
 
-  <label for="email">   EMAIL </label>
-  <input name="email" placeholder="EXAMPLE@MAIL.COM" type="email" id="email" [(ngModel)]="model.email" #email="ngModel" email="model.email" />
-
-  <label for="message">MESSAGE </label>
-  <textarea name="message" id="message" required="required" [(ngModel)]="model.message" #message="ngModel" class="form-control"></textarea>
-
-  <button class="btn mt-1 rounded-0" type="submit" *ngIf="!beingSubmitted" id="submitButton" [disabled]="!name.valid || !message.valid || (email.touched && email.value != '' && !email.valid)">Submit</button>
-</form>
+  <form [formGroup]="contactForm" name="contactForm" (ngSubmit)="onSubmit()">
+      <h2>WE WOULD LOVE TO HEAR FROM YOU!</h2>
+      <label>FULL NAME</label>
+      <input formControlName="name" type="text" name="name" placeholder="FIRST AND LAST">
+      <label>EMAIL</label>
+      <input formControlName="email" type="email" name="email" placeholder="EXAMPLE@MAIL.COM">
+      <label >MESSAGE</label>
+      <textarea formControlName="message" type="text" name="message" maxlength="500" row="10"></textarea>
+      <button class="mt-2" type="submit" [disabled]="contactForm.invalid">SUBMIT</button>
+  </form>
 </div>
 
+
 <app-footer class="fixed-bottom"></app-footer>
+
+
+

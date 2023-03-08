@@ -70,7 +70,29 @@ button:disabled {
   border: 1px solid black;
 }
 
+.error {
+  color: darkred;
+  background-color: lightsalmon;
+  border: .1rem solid crimson;
+  border-radius: .3rem;
+  padding: .5rem;
+  text-align: center;
+  margin: 0 0 1rem 0;
+  display: flex;
+  width: inherit;
+}
 
+.error p {
+  margin: 0;
+  flex-grow: 1;
+}
+.close {
+  cursor: default;
+}
+
+.hidden {
+  display: none;
+}
 @media (max-width:1300px) {
   form {
     display: flex;

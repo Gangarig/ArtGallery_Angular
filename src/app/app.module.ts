@@ -26,7 +26,9 @@ import { ContactMNComponent } from './mongolian/contact-mn/contact-mn.component'
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { contactFormData } from './components/contact/contact-Form-data';
+import { SuccessComponent } from './components/success/success.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,7 +52,9 @@ import { contactFormData } from './components/contact/contact-Form-data';
     ImgZoominMNComponent,
     GalleryGerComponent,
     ContactGerComponent,
-    ContactMNComponent
+    ContactMNComponent,
+    SuccessComponent
+
   ],
   imports: [
     BrowserModule,
