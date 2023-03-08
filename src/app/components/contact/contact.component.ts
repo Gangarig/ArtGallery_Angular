@@ -3,7 +3,6 @@ import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { NetlifyFormsService } from 'src/app/netlify-forms/netlify-forms.service';
 import { Contact } from './contact';
-
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',

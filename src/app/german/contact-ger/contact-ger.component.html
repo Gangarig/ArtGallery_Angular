@@ -1,24 +1,20 @@
 <app-navbar-ger></app-navbar-ger>
-<form class="box customStyle" name="contact" method="POST" data-netlify="true">
-  <div class="width">
-  <h2 class="p-1 m-1">
-    WIR WÜRDEN UNS FREUEN, VON IHNEN ZU HÖREN!
-  </h2>
-  <p>
-    <label class="p-1 m-1">VOLLSTÄNDIGER NAME</label><br>
-    <input class="p-1 m-1" placeholder="VOR UND NACHNAME" max="100" type="text" name="name" />
-  </p>
-  <p>
-    <label class="p-1 m-1">EMAIL </label><br>
-    <input class="p-1 m-1" placeholder="EXAMPLE@MAIL>COM" maxlength="100" type="email" name="email" />
-  </p>
-  <p>
-    <label class="p-1 m-1">MESSAGE</label><br>
-    <textarea class="p-1 m-1" rows="10" maxlength="500" name="message"></textarea>
-  </p>
-  <p>
-    <button class="btn" type="submit">ABSENDEN</button>
-  </p>
+<div class="box">
+  <div class="error" [class.hidden]="errorMsg.length == 0">
+    <p>{{errorMsg}}</p>
+    <span (click)="closeError()" class="close">✖︎</span>
   </div>
-</form>
+
+  <form [formGroup]="contactForm" name="contactForm" (ngSubmit)="onSubmit()">
+      <h2>WIR WÜRDEN UNS FREUEN, VON IHNEN ZU HÖREN!</h2>
+      <label>VOLLSTÄNDIGER NAME</label>
+      <input formControlName="name" type="text" name="name" placeholder="VOR UND NACHNAME">
+      <label>EMAIL</label>
+      <input formControlName="email" type="email" name="email" placeholder="EXAMPLE@MAIL.COM">
+      <label >MESSAGE</label>
+      <textarea formControlName="message" type="text" name="message" maxlength="500" row="10"></textarea>
+      <button class="mt-2" type="submit" [disabled]="contactForm.invalid">ABSENDEN</button>
+  </form>
+</div>
 <app-footer-ger class="fixed-bottom"></app-footer-ger>
+
