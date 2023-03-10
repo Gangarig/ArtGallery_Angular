@@ -25,7 +25,7 @@ import { SuccessComponent } from './components/success/success.component';
 
 
 const routes: Routes = [
-  {path:'',component:HomePageComponent},
+  {path:'homePage',component:HomePageComponent},
   {path:'homeGer',component:HomeGerComponent},
   {path:'homeMn',component:HomeMNComponent},
   {path:'gallery',component:GalleryComponent},
