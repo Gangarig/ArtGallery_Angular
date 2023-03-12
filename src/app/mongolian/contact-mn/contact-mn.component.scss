@@ -1,4 +1,6 @@
-$font: 'Montserrat';
+$font: 'Montserrat',sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Source+Sans+Pro:ital,wght@0,300;1,300&display=swap');
+
 .box {
   width: 100vw;
   height: 100vh;
@@ -16,11 +18,12 @@ form {
 h2 {
   text-align: left;
   font-family: $font;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 15px;
-  letter-spacing: 0.16em;
+  letter-spacing: 0;
   text-align: left;
+  padding-bottom: 20px;
 
 }
 button {
@@ -31,7 +34,7 @@ input {
   margin-bottom: .5rem;
   font-family: $font;
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 11px;
   letter-spacing: 0.16em;
   text-align: left;
@@ -70,6 +73,7 @@ textarea:active {
 }
 button {
   font-family: $font;
+  padding-bottom: 1px;
 }
 button:disabled {
   border: 1px solid black;

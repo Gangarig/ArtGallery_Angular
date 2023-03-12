@@ -1,13 +1,14 @@
 <!-- navbar  -->
 <nav class="navbar">
-  <div class="artist">CHINBAT JAGDAR</div>
+  <div class="artist"><img src="../../../assets/images/Logo/chinbat jagdar logo.png" alt="">
+  </div>
   <p href="" (click)="toggleNavbar()" class="toggle-button ">
     <i (click)="iconChange()" class="fs-2 toggle-icon {{icon}}"
     ></i>
   </p>
   <div class="nav-links" [ngClass]="{'active': navbarActive}">
     <ul class="container">
-    <li><a routerLink="/">HOME</a></li>
+    <li><a class="home" routerLink="/">HOME</a></li>
     <li><a routerLink="/about">ABOUT</a></li>
     <li><a routerLink="/gallery">GALLERY</a></li>
     <li><a routerLink="/contact">CONTACT</a></li>
@@ -26,5 +27,4 @@
     </ul>
   </div>
 </nav>
-
 

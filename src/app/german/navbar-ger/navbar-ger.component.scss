@@ -1,7 +1,11 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+// Imported Fonts
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;1,300&display=swap');
+
+
+
   // default
-*{
-}
+
 body{
   margin: 0;
   padding: 0;
@@ -14,10 +18,10 @@ body{
   color: black;
   width: 100vw;
   overflow: hidden;
+  padding: 0;
 }
 .artist {
 padding-left: 1rem;
-font-family: 'Abhaya Libre Medium';
 font-style: normal;
 font-weight: 600;
 font-size: 32px;
@@ -49,10 +53,10 @@ color: #000000;
   padding: 1rem;
   display: block;
   text-align: left;
-  font-family: 'Source Sans Pro';
   font-style: normal;
+  font-family: 'Source Sans Pro';
   font-weight: 300;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 100%;
   /* identical to box height, or 24px */
 
@@ -73,13 +77,11 @@ color: #000000;
 
 .nav-links ul li select{
   border-radius: 10px;
-  width: 6rem;
+  width: 7rem;
   height: 2.5rem;
   font-size: 20px;
+  padding-left: 10px;
 }
-
-
-
 .select {
   display: flex;
   justify-content: center;
@@ -108,6 +110,7 @@ color: #000000;
   background-color: black;
   border-radius: 10px;
 }
+
 //small laptop
 @media (max-width :1300px) {
 
@@ -138,7 +141,7 @@ color: #000000;
   }
 }
 // mobile screen
-@media (max-width :766px) {
+@media (max-width :735px) {
   .artist {
     padding-left: 1rem;
   }
