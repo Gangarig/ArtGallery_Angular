@@ -23,7 +23,7 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": ["src/favicon.ico", "src/assets",{ "glob": "_redirects", "input": "src", "output": "/" }],
+            "assets": ["src/assets/favicon.png", "src/assets",{ "glob": "_redirects", "input": "src", "output": "/" }],
             "styles": [
               "src/styles.scss",
               "node_modules/bootstrap/dist/css/bootstrap.css"
