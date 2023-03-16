@@ -22,7 +22,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { ContactGerComponent } from './german/contact-ger/contact-ger.component';
 import { ContactMNComponent } from './mongolian/contact-mn/contact-mn.component';
 import { SuccessComponent } from './components/success/success.component';
-
+import { NgOptimizedImage } from '@angular/common';
 
 const routes: Routes = [
   {path:'',component:HomePageComponent},

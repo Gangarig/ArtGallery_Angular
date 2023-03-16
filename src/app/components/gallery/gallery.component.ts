@@ -3,6 +3,8 @@ import { gallery } from 'src/app/galleryEn';
 import { interfaceGallery } from 'src/app/interfaceGallery';
 import { BehaviorSubject } from 'rxjs';
 import { ImgZoominComponent } from '../img-zoomin/img-zoomin.component';
+import { NgOptimizedImage } from '@angular/common';
+
 @Component({
   selector: 'app-gallery',
   templateUrl: './gallery.component.html',

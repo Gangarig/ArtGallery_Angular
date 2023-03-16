@@ -27,7 +27,7 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { SuccessComponent } from './components/success/success.component';
-
+import { NgOptimizedImage } from '@angular/common';
 
 @NgModule({
   declarations: [

@@ -25,7 +25,10 @@
     flex-direction: column;
     padding-bottom: 15rem;
     padding-right: 15rem;
+    margin-top: 150px;
+    object-fit: contain;
     h2{
+
       padding-bottom: 4rem;
       font-family: 'Source Sans Pro';
       font-size: 38px;
@@ -58,6 +61,7 @@
       font-size: 20px;
       line-height:13px ;
       padding-bottom: 5rem;
+
     }
     p{
       width: 400px;
@@ -77,6 +81,7 @@
     h2{
       font-size: 15px;
       line-height:9px ;
+
     }
     p{
       width: 300px;
