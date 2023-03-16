@@ -51,7 +51,7 @@ export const gallery = [
   {
     id: 8,
     artist: "CHINBAT JAGDAR",
-    img:"4.jpg",
+    img:"8.jpg",
     name:"Vajrapani",
     description:"Vajrapani is regarded as the personification of power and the guardian of the tantric teachings of the Buddha. In time out of mind he was assigned the task of vanquishing a demon known as Nagpo Tsalak and was blessed with a name that literally means “Conqueror of the Four Quarters.” At that time he also swore to uphold the teachings of the thousand buddhas for this entire eon. He is said to have many pure lands, accessible to the few who know the paths by which to enter them. The realm where he is personally said to dwell is called Chang Lo Chen in Tibetan, or Adákavati in Sanskrit. His dark blue hue indicates that he never ceases to be absorbed in the blissful Truth Body or Dharmakaya. Although he appears as a wrathful deity, in fact his wrath is merely to protect the dharma from those who would destroy it. The vajra he holds in his right hand represents the knowledge that is the essence of the teachings of the Buddha. He is often depicted in a triad with Avalokiteshvara and Manjushri known as Rigsum Gonpo, symbolizing the qualities necessary for enlightenment – compassion, wisdom and power."
   },
@@ -65,7 +65,7 @@ export const gallery = [
   {
     id: 10,
     artist: "CHINBAT JAGDAR",
-    img:"10.jpg",
+    img:"4.jpg",
     name:"Manjusri",
     description:"Manjusri, in Mahāyāna Buddhism, the bodhisattva (“Buddha-to-be”) personifying supreme wisdom. His name in Sanskrit means “gentle, or sweet, glory”; he is also known as Mãnjughoṣa (“Sweet Voice”) and Vāgīśvara (“Lord of Speech”). In China he is called Wen-shu Shih-li, in Japan Monju, and in Tibet ’Jam-dpal. Although sutras (Buddhist scriptures) were composed in his honour by at least AD 250, he does not seem to have been represented in Buddhist art before AD 400. He is most commonly shown wearing princely ornaments, his right hand holding aloft the sword of wisdom to cleave the clouds of ignorance and his left holding a palm-leaf manuscript of the Prajñāpāramitā. He is sometimes depicted seated on a lion or on a blue lotus; and in paintings his skin is usually yellow in colour."
   },
