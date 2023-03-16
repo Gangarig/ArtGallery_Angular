@@ -30,7 +30,7 @@ export const gallery = [
   {
     id: 5,
     artist: "CHINBAT JAGDAR",
-    img:"5.jpg",
+    img:"4.jpg",
     name:"Yamantaka",
     description:"Yamantaka. Manjushri, the bodhisattva of wisdom, assumed the ferocious form of Yamantaka to conquer death. Death is visualized as a ferocious bull in Tibetan mythology, and is known as Yama, who is also the Hindu god of death. The tale behind Yamantaka's origin states that to tame Yama, Manjushri adopted the same form of a bull, adding to it eight other faces and a multiple array of arms, each holding fearful and deadly weapons. He further sprouted a number of legs, and surrounded himself with a vast host of terrifying beings. To confront death, he thus manifested the form of death itself, magnified to infinity. Death (Yama) saw himself endlessly mirrored back to himself, infinitely outnumbered by himself. Death was literally scared to death. Thus the yogi who meditates through the imagery of Yamantaka intends and hopes to develop a sense of identity strong enough to face down death, and the fear that attends upon it. Each head, each limb, each attribute, symbol and ornament of Yamantaka expresses the total mobilization of the faculties of enlightenment needed for this ultimate confrontation."
   },
@@ -51,14 +51,14 @@ export const gallery = [
   {
     id: 8,
     artist: "CHINBAT JAGDAR",
-    img:"8.jpg",
+    img:"4.jpg",
     name:"Vajrapani",
     description:"Vajrapani is regarded as the personification of power and the guardian of the tantric teachings of the Buddha. In time out of mind he was assigned the task of vanquishing a demon known as Nagpo Tsalak and was blessed with a name that literally means “Conqueror of the Four Quarters.” At that time he also swore to uphold the teachings of the thousand buddhas for this entire eon. He is said to have many pure lands, accessible to the few who know the paths by which to enter them. The realm where he is personally said to dwell is called Chang Lo Chen in Tibetan, or Adákavati in Sanskrit. His dark blue hue indicates that he never ceases to be absorbed in the blissful Truth Body or Dharmakaya. Although he appears as a wrathful deity, in fact his wrath is merely to protect the dharma from those who would destroy it. The vajra he holds in his right hand represents the knowledge that is the essence of the teachings of the Buddha. He is often depicted in a triad with Avalokiteshvara and Manjushri known as Rigsum Gonpo, symbolizing the qualities necessary for enlightenment – compassion, wisdom and power."
   },
   {
     id: 9,
     artist: "CHINBAT JAGDAR",
-    img:"9.jpg",
+    img:"4.jpg",
     name:"Green Tara",
     description:"Green Tara or Shyama-Tara, also known as Green Liberating Mother, is a female, peaceful Buddha and Bodhisattva in Tibetan Buddhism. Green Tara is the primary form within the mandala of the 21 Taras, each expressing different facets of her Buddha activity. Although Green Tara appears relatively late in the Vajrayana Buddhist literature (first Tibetan translation in the 12th century), she originated from an Indian star goddess and was also worshipped in Indian Mahayana from the 3rd century. In Tibetan Buddhism, Green Tara is now revered like few other Bodhisattvas. The praise of the 21 Taras is one of the most common Sadhanas."
   },
