@@ -1,0 +1,95 @@
+.box {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 2rem;
+}
+.box img {
+  width: 40vw;
+  outline: 2px solid black;
+}
+.box .text {
+  width: 40vw;
+}
+.box .text h2 {
+  text-align: center;
+  font-family: "Source Sans Pro";
+  font-size: 40px;
+  margin-bottom: 2.5rem;
+  padding-top: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+.box .text p {
+  font-family: "Source Sans Pro";
+  font-size: 30px;
+  font-family: Source Sans Pro;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: "justified";
+}
+
+@media (max-width: 2193px) {
+  .box .text h2 {
+    font-size: 35px;
+  }
+  .box .text p {
+    font-size: 25px;
+  }
+}
+@media (max-width: 1676px) {
+  .box .text h2 {
+    font-size: 30px;
+  }
+  .box .text p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1200px) {
+  .box .text h2 {
+    font-size: 25px;
+  }
+  .box .text p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 970px) {
+  .box .text h2 {
+    font-size: 18px;
+    margin-bottom: 1rem;
+    padding-top: 0.5rem;
+  }
+  .box .text p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 970px) {
+  .box {
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .box img {
+    margin: 1rem;
+    width: 80vw;
+  }
+  .box .text {
+    width: 80vw;
+  }
+  .box .text h2 {
+    font-size: 18px;
+    margin-bottom: 1rem;
+    padding-top: 0.5rem;
+  }
+  .box .text p {
+    font-size: 14px;
+  }
+  #reverse {
+    flex-direction: column-reverse;
+  }
+}/*# sourceMappingURL=about-mn.component.css.map */

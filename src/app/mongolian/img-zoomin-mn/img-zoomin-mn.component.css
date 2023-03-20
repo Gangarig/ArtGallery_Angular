@@ -27,9 +27,6 @@
   flex-direction: column;
   padding-bottom: 15rem;
   padding-right: 15rem;
-  margin-top: 150px;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 .content .details h2 {
   padding-bottom: 4rem;
@@ -94,4 +91,4 @@
     padding-bottom: 0;
     font-weight: 700;
   }
-}/*# sourceMappingURL=img-zoomin.component.css.map */
+}/*# sourceMappingURL=img-zoomin-mn.component.css.map */

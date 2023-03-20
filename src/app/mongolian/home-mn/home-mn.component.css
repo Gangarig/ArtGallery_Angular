@@ -1,5 +1,5 @@
 #background {
-  height: 91vh;
+  height: 100vh;
   width: auto;
   background-size: cover;
   background-repeat: repeat;
@@ -15,7 +15,4 @@
   to {
     background-position: -100% top;
   }
-}
-.home {
-  text-decoration: underline;
-}/*# sourceMappingURL=home-page.component.css.map */
+}/*# sourceMappingURL=home-mn.component.css.map */
