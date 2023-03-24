@@ -1,30 +1,53 @@
 <!-- navbar  -->
-<nav class="navbar">
-  <div class="artist"><img src="../../../assets/images/Logo/chinbat jagdar logo.png" alt="">
-  </div>
-  <p href="" (click)="toggleNavbar()" class="toggle-button ">
+<nav class="navbar" id="navbar">
+<ul class="brandName">
+  <li>
+    <a routerLink="{{homeLink}}"><img src="../../../assets/images/Logo/logobig.png" alt="brandName"></a>
+  </li>
+</ul>
+<ul id="navLinks" class="navLinks">
+  <li><a class="link" routerLink="{{homeLink}}">{{home}}</a></li>
+  <li><a class="link" routerLink="{{aboutLink}}">{{about}}</a></li>
+  <li><a class="link" routerLink="{{galleryLink}}">{{gallery}}</a></li>
+  <li><a class="link" routerLink="{{contactLink}}">{{contact}}</a></li>
+  <li>
+    <select name="language" id="language" [(ngModel)]="selectedLanguage" (change)="navigateToPage()">
+      <option value="english">English</option>
+      <option value="german">Deutsch</option>
+      <option value="mongolian">Монгол хэл</option>
+    </select>
+  </li>
+</ul>
+
+</nav>
+
+<!-- responsive navbar is here -->
+<nav class="responsive" id="responsive">
+  <a routerLink="{{homeLink}}"><img src="../../../assets/images/Logo/logobig.png" alt="brandName" class="brandName"></a>
+  <p  (click)="toggleNavbar()" class="toggle-button">
     <i (click)="iconChange()" class="fs-2 toggle-icon {{icon}}"
     ></i>
   </p>
-  <div class="nav-links" [ngClass]="{'active': navbarActive}">
-    <ul class="container">
-    <li><a class="home" routerLink="/">HOME</a></li>
-    <li><a routerLink="/about">ABOUT</a></li>
-    <li><a routerLink="/gallery">GALLERY</a></li>
-    <li><a routerLink="/contact">CONTACT</a></li>
+  <ul id="show" class="nav">
+    <li><a class="link" routerLink="{{homeLink}}">{{home}}</a></li>
+    <li><a class="link" routerLink="{{aboutLink}}">{{about}}</a></li>
+    <li><a class="link" routerLink="{{galleryLink}}">{{gallery}}</a></li>
+    <li><a class="link" routerLink="{{contactLink}}">{{contact}}</a></li>
     <li class="select">
       <select name="language" id="language" [(ngModel)]="selectedLanguage" (change)="navigateToPage()">
         <option value="english">English</option>
         <option value="german">Deutsch</option>
         <option value="mongolian">Монгол хэл</option>
       </select>
-      <div class="icons">
+      <div class="icons" id="icons">
         <a href="https://www.facebook.com/chinbat.thangka"><i class="m-1 bi bi-facebook"></i></a>
         <a href="https://www.instagram.com/chinbat.thangka/"><i class="m-1 bi bi-instagram"></i></a>
         <a href="mailto:chinbat.gallery@gmail.com"><i class="m-1 bi bi-envelope"></i></a>
       </div>
     </li>
-    </ul>
-  </div>
+
+  </ul>
+
+
 </nav>
 

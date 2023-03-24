@@ -7,4 +7,6 @@ import { NgOptimizedImage } from '@angular/common';
 })
 export class AppComponent {
   title = 'ArtGallery_Angular';
-}
+
+
+};

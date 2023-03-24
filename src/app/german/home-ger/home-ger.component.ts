@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, NavigationEnd, Route } from '@angular/router';
 
 @Component({
   selector: 'app-home-ger',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeGerComponent implements OnInit {
 
-  constructor() { }
 
-  ngOnInit(): void {
+  constructor( private router:Router) { }
+  ngOnInit() {
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        window.scrollTo(0, 0);
+      }
+    });
   }
 
 }

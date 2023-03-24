@@ -11,13 +11,9 @@ import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HomeMNComponent } from './mongolian/home-mn/home-mn.component';
 import { AboutMNComponent } from './mongolian/about-mn/about-mn.component';
-import { NavbarMNComponent } from './mongolian/navbar-mn/navbar-mn.component';
-import { FooterMNComponent } from './mongolian/footer-mn/footer-mn.component';
 import { GalleryMNComponent } from './mongolian/gallery-mn/gallery-mn.component';
 import { ImgZoominMNComponent } from './mongolian/img-zoomin-mn/img-zoomin-mn.component';
 import { HomeGerComponent } from './german/home-ger/home-ger.component';
-import { NavbarGerComponent } from './german/navbar-ger/navbar-ger.component';
-import { FooterGerComponent } from './german/footer-ger/footer-ger.component';
 import { AboutGerComponent } from './german/about-ger/about-ger.component';
 import { ImgZoominGerComponent } from './german/img-zoomin-ger/img-zoomin-ger.component';
 import { GalleryGerComponent } from './german/gallery-ger/gallery-ger.component';
@@ -41,12 +37,8 @@ import { NgOptimizedImage } from '@angular/common';
     ContactComponent,
     HomeMNComponent,
     AboutMNComponent,
-    NavbarMNComponent,
-    FooterMNComponent,
     GalleryMNComponent,
     HomeGerComponent,
-    NavbarGerComponent,
-    FooterGerComponent,
     AboutGerComponent,
     ImgZoominGerComponent,
     ImgZoominMNComponent,

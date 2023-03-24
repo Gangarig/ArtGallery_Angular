@@ -1,7 +1,6 @@
 <!-- gallery content is here -->
-<app-navbar></app-navbar>
-<div id="gallery" >
 
+<div id="gallery" >
   <div class="img" *ngFor=" let pic of gallery ; index as i">
     <img id="img" routerLink="/imgzoomin/{{i}}" src="../../../assets/images/gallery/{{pic.img}} "
      alt="">
@@ -12,4 +11,4 @@
       </div>
   </div>
 </div>
-<app-footer></app-footer>
+
