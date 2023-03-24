@@ -47,6 +47,7 @@ export class NavbarComponent implements OnInit {
         {
           document.getElementById('navbar')?.classList.replace('navbarMN','navbar');
         }
+        this.toggleNavbar();
 
       } else if (this.selectedLanguage === 'german') {
         this.home = "HOME";
@@ -63,6 +64,7 @@ export class NavbarComponent implements OnInit {
         {
           document.getElementById('navbar')?.classList.replace('navbarMN','navbar');
         }
+        this.toggleNavbar();
 
       } else if (this.selectedLanguage === 'mongolian') {
         this.home = "НҮҮР ХУУДАС";
@@ -76,6 +78,7 @@ export class NavbarComponent implements OnInit {
         this.contactLink ="/contactMn";
         this.router.navigate(['/homeMn']);
         document.getElementById('navbar')?.classList.replace('navbar','navbarMN');
+        this.toggleNavbar();
     }
       
   }
