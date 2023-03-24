@@ -78,8 +78,9 @@ export class NavbarComponent implements OnInit {
         this.contactLink ="/contactMn";
         this.router.navigate(['/homeMn']);
         document.getElementById('navbar')?.classList.replace('navbar','navbarMN');
-    }
         toggleNavbar();
+    }
+      
   }
 
   // responsive navbar methods
