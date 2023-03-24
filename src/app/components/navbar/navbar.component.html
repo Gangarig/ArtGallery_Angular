@@ -29,20 +29,20 @@
     ></i>
   </p>
   <ul id="show" class="nav">
-    <li><a class="link" routerLink="{{homeLink}}">{{home}}</a></li>
-    <li><a class="link" routerLink="{{aboutLink}}">{{about}}</a></li>
-    <li><a class="link" routerLink="{{galleryLink}}">{{gallery}}</a></li>
-    <li><a class="link" routerLink="{{contactLink}}">{{contact}}</a></li>
+    <li><a (click)="toggleNavbar()" class="link" routerLink="{{homeLink}}">{{home}}</a></li>
+    <li><a (click)="toggleNavbar()" class="link" routerLink="{{aboutLink}}">{{about}}</a></li>
+    <li><a (click)="toggleNavbar()" class="link" routerLink="{{galleryLink}}">{{gallery}}</a></li>
+    <li><a (click)="toggleNavbar()" class="link" routerLink="{{contactLink}}">{{contact}}</a></li>
     <li class="select">
       <select name="language" id="language" [(ngModel)]="selectedLanguage" (change)="navigateToPage()">
-        <option value="english">English</option>
-        <option value="german">Deutsch</option>
-        <option value="mongolian">Монгол хэл</option>
+        <option (click)="toggleNavbar()" value="english">English</option>
+        <option (click)="toggleNavbar()"   value="german">Deutsch</option>
+        <option (click)="toggleNavbar()" value="mongolian">Монгол хэл</option>
       </select>
       <div class="icons" id="icons">
-        <a href="https://www.facebook.com/chinbat.thangka"><i class="m-1 bi bi-facebook"></i></a>
-        <a href="https://www.instagram.com/chinbat.thangka/"><i class="m-1 bi bi-instagram"></i></a>
-        <a href="mailto:chinbat.gallery@gmail.com"><i class="m-1 bi bi-envelope"></i></a>
+        <a (click)="toggleNavbar()" href="https://www.facebook.com/chinbat.thangka"><i class="m-1 bi bi-facebook"></i></a>
+        <a (click)="toggleNavbar()" href="https://www.instagram.com/chinbat.thangka/"><i class="m-1 bi bi-instagram"></i></a>
+        <a (click)="toggleNavbar()" href="mailto:chinbat.gallery@gmail.com"><i class="m-1 bi bi-envelope"></i></a>
       </div>
     </li>
 
