@@ -35,9 +35,9 @@
     <li><a (click)="toggleNavbar()" class="link" routerLink="{{contactLink}}">{{contact}}</a></li>
     <li class="select">
       <select name="language" id="language" [(ngModel)]="selectedLanguage" (change)="navigateToPage()">
-        <option (click)="toggleNavbar()" value="english">English</option>
-        <option (click)="toggleNavbar()"   value="german">Deutsch</option>
-        <option (click)="toggleNavbar()" value="mongolian">Монгол хэл</option>
+        <option value="english">English</option>
+        <option value="german">Deutsch</option>
+        <option value="mongolian">Монгол хэл</option>
       </select>
       <div class="icons" id="icons">
         <a (click)="toggleNavbar()" href="https://www.facebook.com/chinbat.thangka"><i class="m-1 bi bi-facebook"></i></a>
