@@ -1,191 +1,338 @@
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;1,300&display=swap");
-body {
-  margin: 0;
-  padding: 0;
-}
-
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
-  color: black;
-  width: 100vw;
-  overflow: hidden;
-  padding: 0;
-}
-
-.artist {
-  padding-left: 1rem;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 25px;
-  /* identical to box height, or 78% */
-  letter-spacing: 0.05em;
-  color: #000000;
-}
-
-.nav-links {
-  padding-right: 2rem;
-}
-
-.nav-links ul {
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: space-around;
+  height: 60px;
 }
-
-.nav-links li {
+.navbar ul {
   list-style: none;
-}
-
-.nav-links li a {
-  text-decoration: none;
-  color: black;
-  padding: 1rem;
-  display: block;
-  text-align: left;
-  font-style: normal;
-  font-family: "Source Sans Pro";
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 100%;
-  /* identical to box height, or 24px */
-  letter-spacing: 0.2em;
-  color: #000000;
-}
-
-.nav-links li a:hover {
-  scale: 1.05;
-}
-
-.nav-links li a:active {
-  scale: 1;
-}
-
-.nav-links li a:hover {
-  color: gray;
-}
-
-.nav-links ul li select {
-  border-radius: 10px;
-  width: 7rem;
-  height: 2.5rem;
-  font-size: 20px;
-  padding-left: 10px;
-}
-
-.select {
   display: flex;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.navbar ul li {
+  display: flex;
+  height: 100%;
   justify-content: center;
   align-items: center;
+  font-size: 25px;
+  font-family: "Source Sans Pro";
 }
-
-.select .icons {
-  display: none;
+.navbar ul a.link {
+  font-family: "Source Sans Pro";
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+.navbar ul a.link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 4px;
+  background-color: #18272F;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+.navbar ul a.link:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+.navbar #language {
+  border-radius: 10px;
+  width: -moz-fit-content;
+  width: fit-content;
+  width: 120px;
+  margin-right: 2rem;
+}
+.navbar img {
+  height: 30px;
+  padding-left: 2rem;
+}
+.navbar .navLinks {
+  display: flex;
+  justify-content: space-between;
+  width: 50vw;
+  align-items: center;
+  font-family: "Source Sans Pro";
 }
 
 .toggle-button {
-  position: absolute;
-  top: 0;
-  right: 1rem;
   display: none;
-  flex-direction: column;
+}
+
+#icons {
+  display: none;
+}
+
+.responsive {
+  display: none;
+}
+
+.navbarMN {
+  display: flex;
   justify-content: space-between;
-  width: 30px;
-  height: 21px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 60px;
 }
-
-.toggle-icon {
+.navbarMN ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.navbarMN ul li {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-family: "Source Sans Pro";
+}
+.navbarMN ul a.link {
+  font-family: "Source Sans Pro";
+  text-decoration: none;
   color: black;
+  position: relative;
 }
-
-.toggle-button .bar {
-  height: 3px;
+.navbarMN ul a.link::before {
+  content: "";
+  position: absolute;
   width: 100%;
-  background-color: black;
-  border-radius: 10px;
+  height: 2px;
+  border-radius: 4px;
+  background-color: #18272F;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+.navbarMN ul a.link:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
 }
 
-@media (max-width: 1300px) {
-  .nav-links ul li a {
-    font-size: 1rem;
-    line-height: 1rem;
+#language {
+  border-radius: 10px;
+  width: -moz-fit-content;
+  width: fit-content;
+  width: 120px;
+  margin-right: 2rem;
+}
+
+img {
+  height: 30px;
+  padding-left: 2rem;
+}
+
+.navLinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Source Sans Pro";
+  width: 60vw;
+}
+
+@media screen and (max-width: 1440px) {
+  .navbar ul li {
+    font-size: 20px;
   }
-  .nav-links ul li select {
-    border-radius: 10px;
-    width: 4rem;
-    height: 1.5rem;
-    font-size: 0.7rem;
+  .navbar img {
+    height: 25px;
+  }
+  .navbar #language {
+    width: 100px;
+  }
+  .navbarMN ul li {
+    font-size: 15px;
+  }
+  .navbarMN img {
+    height: 25px;
+  }
+  .navbarMN #language {
+    width: 100px;
   }
 }
-@media (max-width: 1000px) {
-  .nav-links ul li a {
-    font-size: 0.6rem;
-    line-height: 0.6rem;
+@media screen and (max-width: 1000px) {
+  .navbarMN ul li {
+    font-size: 12px;
   }
-  .nav-links ul li select {
-    border-radius: 10px;
-    width: 3.2rem;
-    height: 1rem;
-    font-size: 0.5rem;
-  }
-}
-@media (max-width: 735px) {
-  .artist {
+  .navbarMN img {
+    height: 20px;
     padding-left: 1rem;
   }
-  .toggle-button {
-    display: flex;
+  .navbarMN #language {
+    width: 80px;
+    margin-right: 1rem;
   }
-  .nav-links {
-    display: none;
-    width: 100%;
-    flex-direction: column;
+}
+@media screen and (max-width: 1150px) {
+  .navbar ul li {
+    font-size: 15px;
   }
-  .nav-links.active {
-    display: flex;
+  .navbar img {
+    height: 20px;
   }
+  .navbar #language {
+    width: 80px;
+  }
+}
+@media screen and (max-width: 800px) {
   .navbar {
-    flex-direction: column;
-    align-items: flex-start;
+    display: none;
   }
-  .nav-links ul {
-    width: 100%;
+  .navbarMN {
+    display: none;
+  }
+  #icons {
+    display: block;
+  }
+  #language {
+    width: 150px;
+  }
+  .toggle-button {
+    display: block;
+    position: absolute;
+    top: 1.1rem;
+    right: 0rem;
+    opacity: 1;
+    width: 50px;
+    height: 50px;
+  }
+  .brandName {
+    position: absolute;
+    top: 1.5rem;
+    width: 300px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    left: 1rem;
+    opacity: 1;
+  }
+  .responsive {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    height: 70px;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    transition: 0.5s;
+    padding-top: 50px;
+    width: 100vw;
+  }
+  .nav {
+    height: 0;
+    overflow: hidden;
+    display: flex;
     flex-direction: column;
+    font-size: 25px;
+    list-style: none;
+    width: 100vw;
+    justify-content: flex-start;
+    background-color: white;
+    transition: 0.5s;
+  }
+  .nav li {
+    width: 100%;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+  }
+  .nav a.link {
+    font-family: "Source Sans Pro";
+    text-decoration: none;
+    color: black;
+    position: relative;
+  }
+  .navLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 25px;
+    list-style: none;
+    width: 100vw;
+    justify-content: flex-start;
+    margin: 0;
+    padding-top: 200px;
+    height: 400px;
+    padding-left: 1rem;
+    background-color: white;
+    transition: 0.5s;
+  }
+  .navLinks li {
+    width: 100%;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+  }
+  .navLinks a.link {
+    font-family: "Source Sans Pro";
+    text-decoration: none;
+    color: black;
+    position: relative;
+  }
+  .navLinks a.link::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    border-radius: 4px;
+    background-color: #18272F;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  .navLinks a.link:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
   }
   .select {
     display: flex;
     justify-content: space-between;
-    padding-left: 1rem;
+    width: -moz-fit-content;
+    width: fit-content;
   }
-  .select .icons {
-    display: flex;
+  #icons {
+    position: relative;
+    right: 1rem;
   }
-  .select .icons a i {
-    font-size: 20px;
+  #icons a {
+    color: black;
+    font-size: 25px;
   }
-  .select .icons i:hover {
+  #icons a:hover {
     color: #510d5f;
+    text-shadow: 1px 1px #510d5f;
   }
-  .artist {
-    font-size: 1rem;
-    line-height: 1rem;
-    padding-left: 1rem;
+}
+@media screen and (max-width: 600px) {
+  .brandName {
+    position: absolute;
+    top: 1.8rem;
+    width: 200px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    left: 1rem;
+    opacity: 1;
   }
-  .nav-links ul li a {
-    font-size: 1rem;
-  }
-  .nav-links ul li select {
-    border-radius: 10px;
-    width: 6rem;
-    height: 1.5rem;
-    font-size: 1rem;
-  }
-  .nav-links li a:hover {
-    scale: 1;
+  #icons {
+    font-size: 20px;
   }
 }/*# sourceMappingURL=navbar.component.css.map */
