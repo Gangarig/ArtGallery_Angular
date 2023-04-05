@@ -1,5 +1,12 @@
 export const gallery = [
   {
+    id: 13,
+    artist: "CHINBAT JAGDAR",
+    img:"13.jpg",
+    name:"Dorje Shugden",
+    description:"Dorje Shugden is generally believed to be a worldly protector deity that was likely practiced first in the Sakya Tradition of Tibetan Buddhism. The earliest known ritual text was written by Morchen Kunga Lhundrub (1654-1728). According to some accounts Dorje Shugden was inducted into the pantheon of Sakya protectors by Sakya Trizin Sonam Rinchen (1705-1741). Later, placed together with the two protector deities Dorje Setrab and Tsi'u Marpo they were collectively known as the Three Kings (Gyalpo Sum). In the Sakya texts Shugden is known as Dorje Shugden Tanag, or rather Dorje Shugden Riding a Black Horse. He holds a butcher's stick upraised in the right hand and a heart in the left lifted up to the mouth. Dressed in the robes of a monastic and wearing a gold lacquer riding hat, he sits atop a black horse. In the early 20th century Dorje Shugden Tanag fell out of favour with the Sakya Tradition in general. His devotees and practices have subsequently diminished. Since the late 20th century the offering rituals for the Three Kings are no longer found in the standard daily use Sakya Protectors manuals in monasteries in India or Tibet."
+  },
+  {
     id: 1,
     artist: "CHINBAT JAGDAR",
     img:"1.jpg",
@@ -82,12 +89,5 @@ export const gallery = [
     img:"12.jpg",
     name:"Saraswati",
     description:"Saraswati, Goddess of Music (Tibetan: ད+ངས་ཅན་མ, Wylie: dbyangs can ma, THL: yang chen ma), or the Tara of Music (Tibetan: ད+ངས་ཅན་/ོལ་མ, Wylie: dbyangs can sgrol ma, THL: yang chen dröl ma), considered the consort of Mañjuśri, Buddha of Wisdom, she is one of the 21 Taras. Saraswati is the Divine Embodiment & bestower of Enlightened Eloquence & Inspiration, patroness of the arts, sciences, music, language, literature, history, poetry & philosophy, all those engaged in creative endeavours in Tibetan Buddhism. She is considered the peaceful manifestation of Palden Lhamo (Glorious Goddess). In the Gelugpa tradition, Palden Lhamo is known as Magzor Gyalmo (the Queen who Repels Armies) and is a wrathful emanation of Saraswati while being a protector. Saraswati was the yidam (principal personal meditational deity) of 14th century Tibetan monk Je Tsongkhapa. He composed a devotional poem to her. She is believed in the Tibetan tradition to have accompanied him on his travels, as well as regularly engaging in conversations with him."
-  },
-  {
-    id: 13,
-    artist: "CHINBAT JAGDAR",
-    img:"13.jpg",
-    name:"Dorje Shugden",
-    description:"Dorje Shugden is generally believed to be a worldly protector deity that was likely practiced first in the Sakya Tradition of Tibetan Buddhism. The earliest known ritual text was written by Morchen Kunga Lhundrub (1654-1728). According to some accounts Dorje Shugden was inducted into the pantheon of Sakya protectors by Sakya Trizin Sonam Rinchen (1705-1741). Later, placed together with the two protector deities Dorje Setrab and Tsi'u Marpo they were collectively known as the Three Kings (Gyalpo Sum). In the Sakya texts Shugden is known as Dorje Shugden Tanag, or rather Dorje Shugden Riding a Black Horse. He holds a butcher's stick upraised in the right hand and a heart in the left lifted up to the mouth. Dressed in the robes of a monastic and wearing a gold lacquer riding hat, he sits atop a black horse. In the early 20th century Dorje Shugden Tanag fell out of favour with the Sakya Tradition in general. His devotees and practices have subsequently diminished. Since the late 20th century the offering rituals for the Three Kings are no longer found in the standard daily use Sakya Protectors manuals in monasteries in India or Tibet."
   },
 ]
