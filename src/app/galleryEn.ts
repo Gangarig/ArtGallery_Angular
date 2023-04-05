@@ -30,7 +30,7 @@ export const gallery = [
   {
     id: 5,
     artist: "CHINBAT JAGDAR",
-    img:"4.jpg",
+    img:"5.jpg",
     name:"Yamantaka",
     description:"Yamantaka. Manjushri, the bodhisattva of wisdom, assumed the ferocious form of Yamantaka to conquer death. Death is visualized as a ferocious bull in Tibetan mythology, and is known as Yama, who is also the Hindu god of death. The tale behind Yamantaka's origin states that to tame Yama, Manjushri adopted the same form of a bull, adding to it eight other faces and a multiple array of arms, each holding fearful and deadly weapons. He further sprouted a number of legs, and surrounded himself with a vast host of terrifying beings. To confront death, he thus manifested the form of death itself, magnified to infinity. Death (Yama) saw himself endlessly mirrored back to himself, infinitely outnumbered by himself. Death was literally scared to death. Thus the yogi who meditates through the imagery of Yamantaka intends and hopes to develop a sense of identity strong enough to face down death, and the fear that attends upon it. Each head, each limb, each attribute, symbol and ornament of Yamantaka expresses the total mobilization of the faculties of enlightenment needed for this ultimate confrontation."
   },
@@ -58,14 +58,14 @@ export const gallery = [
   {
     id: 9,
     artist: "CHINBAT JAGDAR",
-    img:"4.jpg",
+    img:"9.jpg",
     name:"Green Tara",
     description:"Green Tara or Shyama-Tara, also known as Green Liberating Mother, is a female, peaceful Buddha and Bodhisattva in Tibetan Buddhism. Green Tara is the primary form within the mandala of the 21 Taras, each expressing different facets of her Buddha activity. Although Green Tara appears relatively late in the Vajrayana Buddhist literature (first Tibetan translation in the 12th century), she originated from an Indian star goddess and was also worshipped in Indian Mahayana from the 3rd century. In Tibetan Buddhism, Green Tara is now revered like few other Bodhisattvas. The praise of the 21 Taras is one of the most common Sadhanas."
   },
   {
     id: 10,
     artist: "CHINBAT JAGDAR",
-    img:"4.jpg",
+    img:"10.jpg",
     name:"Manjusri",
     description:"Manjusri, in Mahāyāna Buddhism, the bodhisattva (“Buddha-to-be”) personifying supreme wisdom. His name in Sanskrit means “gentle, or sweet, glory”; he is also known as Mãnjughoṣa (“Sweet Voice”) and Vāgīśvara (“Lord of Speech”). In China he is called Wen-shu Shih-li, in Japan Monju, and in Tibet ’Jam-dpal. Although sutras (Buddhist scriptures) were composed in his honour by at least AD 250, he does not seem to have been represented in Buddhist art before AD 400. He is most commonly shown wearing princely ornaments, his right hand holding aloft the sword of wisdom to cleave the clouds of ignorance and his left holding a palm-leaf manuscript of the Prajñāpāramitā. He is sometimes depicted seated on a lion or on a blue lotus; and in paintings his skin is usually yellow in colour."
   },
@@ -82,5 +82,12 @@ export const gallery = [
     img:"12.jpg",
     name:"Saraswati",
     description:"Saraswati, Goddess of Music (Tibetan: ད+ངས་ཅན་མ, Wylie: dbyangs can ma, THL: yang chen ma), or the Tara of Music (Tibetan: ད+ངས་ཅན་/ོལ་མ, Wylie: dbyangs can sgrol ma, THL: yang chen dröl ma), considered the consort of Mañjuśri, Buddha of Wisdom, she is one of the 21 Taras. Saraswati is the Divine Embodiment & bestower of Enlightened Eloquence & Inspiration, patroness of the arts, sciences, music, language, literature, history, poetry & philosophy, all those engaged in creative endeavours in Tibetan Buddhism. She is considered the peaceful manifestation of Palden Lhamo (Glorious Goddess). In the Gelugpa tradition, Palden Lhamo is known as Magzor Gyalmo (the Queen who Repels Armies) and is a wrathful emanation of Saraswati while being a protector. Saraswati was the yidam (principal personal meditational deity) of 14th century Tibetan monk Je Tsongkhapa. He composed a devotional poem to her. She is believed in the Tibetan tradition to have accompanied him on his travels, as well as regularly engaging in conversations with him."
+  },
+  {
+    id: 13,
+    artist: "CHINBAT JAGDAR",
+    img:"13.jpg",
+    name:"Dorje Shugden",
+    description:"Dorje Shugden is generally believed to be a worldly protector deity that was likely practiced first in the Sakya Tradition of Tibetan Buddhism. The earliest known ritual text was written by Morchen Kunga Lhundrub (1654-1728). According to some accounts Dorje Shugden was inducted into the pantheon of Sakya protectors by Sakya Trizin Sonam Rinchen (1705-1741). Later, placed together with the two protector deities Dorje Setrab and Tsi'u Marpo they were collectively known as the Three Kings (Gyalpo Sum). In the Sakya texts Shugden is known as Dorje Shugden Tanag, or rather Dorje Shugden Riding a Black Horse. He holds a butcher's stick upraised in the right hand and a heart in the left lifted up to the mouth. Dressed in the robes of a monastic and wearing a gold lacquer riding hat, he sits atop a black horse. In the early 20th century Dorje Shugden Tanag fell out of favour with the Sakya Tradition in general. His devotees and practices have subsequently diminished. Since the late 20th century the offering rituals for the Three Kings are no longer found in the standard daily use Sakya Protectors manuals in monasteries in India or Tibet."
   },
 ]
